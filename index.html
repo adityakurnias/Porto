@@ -5,24 +5,25 @@
     <title>Portofolio | Aditya Kurnia Saputra</title>
     
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
     <aside id="navbar" class="navbar">
         <a id="hide-nav2" href="#perkenalan">Profile</a>
-        <a id="hide-nav2" href="">Project</a>
+        <a id="hide-nav2" href="#project">Project</a>
         <a id="hide-nav2" href="">H. Education</a>
         <a id="hide-mav2" href="">Contact Me</a>
         
         <button id="hide-nav" class="show-hide">
-            <img src="assets/images/hambl.svg" width="48px">
+            <img src="assets/images/hambl.svg" width="104px">
         </button>
     </aside> 
     <nav>
         <a href="#welcome"><h1>Aditya.</h1></a>
         <button id="show-nav" class="show-hide">
-            <img src="assets/images/ham.svg" width="48px">
+            <img src="assets/images/ham.svg" width="104px">
         </button>
     </nav>
     <div id="welcome" class="welcome">
@@ -32,13 +33,13 @@
         <h1 class="dev">Developer</h1> 
         </div>
     </div>
-    <main>
+
         <section id="perkenalan" class="perkenalan">
-            <p data-aos="fade-up" data-aos-duration="500" >
+            <p data-aos="fade-up" data-aos-duration="600" >
                 I am a student from SMK Plus Pelita Nusantara Bogor majoring in Software Engineering, Although still in the learning stage, I have a high enthusiasm to continue learning and developing myself in the field of Software Engineering. 
             </p>
             <div class="more-tab" id="more-tab">
-                <img src="assets/images/saya.jpg" alt="Aditya Kurnia Saputra" width="200px ">
+                <img src="assets/images/saya.jpg" alt="Aditya Kurnia Saputra" width="400px">
                 <h1>Aditya Kurnia Saputra.</h1>
                 
                 <div class="skill">
@@ -57,6 +58,12 @@
                     <div class="progress-container">
                         <div class="progress-bar3"></div>
                     </div>
+                    
+                     <h3>PHP, SQL.</h3>
+                    <div class="progress-container">
+                        <div class="progress-bar4"></div>
+                    </div>
+                    
                 </div>
                 
                 <div class="jobs">
@@ -65,12 +72,40 @@
                 </div>
             </div>
             
-            <button data-aos="fade-up" data-aos-duration="500" class="more-info" id="more-info">
-                More Info
-                <img class="arrow" src="assets/images/arrowdown.svg" width="48px">
-            </button>
+                <img 
+                data-aos="fade-up"
+                data-aos-duration="800"
+                class="more-info arrow" id="more-info" src="assets/images/arrowdown.svg" width="140px">
         </section>
-    </main>
+        
+        <section id="project" class="project">
+            <h1 data-aos="fade-up">My Project</h1>
+           <div data-aos="fade-right" class="container">
+               <h2>Projek</h2>
+                <img class="proj1" src="assets/images/fakeproj1.jpg" width="750px">
+           </div>
+           <div data-aos="fade-left" class="container">
+               <h2>Projek</h2>
+                <img class="proj2" src="assets/images/fakeproj2.jpg" width="750px">
+           </div>
+        </section>
+        
+        <section id="education" class="education">
+           <h2 data-aos="fade-up">Education.</h2>
+            <div data-aos="fade-right" class="school">
+                <h3>SDN Bedahan 02</h3>
+                <h5>2014 - 2019</h5>
+            </div>
+            <div data-aos="fade-left" class="school">
+                <h3>SMPI Ar-Ridho Depok</h3>
+                <h5>2019 - 2023</h5>
+            </div>
+            <div data-aos="fade-right" data-aos-duration="600" class="school">
+                <h3>SMK Plus Pelita Nusantara</h3>
+                <h5>2023 - NOW</h5>
+            </div>
+        </section>
+    
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
     <script src="assets/js/script.js"> </script>
 </body>

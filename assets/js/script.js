@@ -1,3 +1,4 @@
+//AOS
 AOS.init()
 
 /* Navbar  */
@@ -25,7 +26,6 @@ hide2.addEventListener('click', () => {
 
 const moreInfoBtn = document.getElementById('more-info')
 const moreTab = document.getElementById('more-tab')
-const arrow = document.getElementById('arrow')
 
 moreInfoBtn.addEventListener('click', () => {
     moreTab.classList.toggle('start')
