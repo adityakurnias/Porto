@@ -1,29 +1,25 @@
 //AOS
-AOS.init()
+AOS.init({
+    easing: 'ease-out-back',
+    duration: 1000
+});
 
 /* Navbar  */
-const show = document.getElementById('show-nav')
-const hide = document.getElementById('hide-nav')
-const hide2 = document.getElementById('hide-nav2')
-const navbar = document.getElementById('navbar')
+const navbar = document.getElementById('navbar');
 
-show.addEventListener('click', () => {
-    navbar.classList.add('show')
-    navbar.classList.remove('hide')    
-})
+function toggleNavbar(action) {
+    navbar.classList.add(action === 'show' ? 'show' : 'hide');
+    navbar.classList.remove(action === 'show' ? 'hide' : 'show');
+}
 
-hide.addEventListener('click', () => {
-    navbar.classList.add('hide') 
-    navbar.classList.remove('add')
-})
+document.getElementById('show-nav').addEventListener('click', () => toggleNavbar('show'));
+document.getElementById('hide-nav').addEventListener('click', () => toggleNavbar('hide'));
 
-hide2.addEventListener('click', () => {
-    navbar.classList.add('hide') 
-    navbar.classList.remove('add')
-})
+document.querySelectorAll('.navbar a').forEach(link => {
+    link.addEventListener('click', () => toggleNavbar('hide'));
+});
 
 /* More info */
-
 const moreInfoBtn = document.getElementById('more-info')
 const moreTab = document.getElementById('more-tab')
 

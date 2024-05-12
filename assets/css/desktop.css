@@ -1,0 +1,41 @@
+nav {
+    padding: 2rem;
+}
+
+nav h1 {
+    font-size: 5rem;
+}
+
+.show-hide img {
+    width: 104px;
+}
+
+.navbar a {
+    font-size: 7rem;
+    margin: 32px; 
+}
+
+.front {
+    font-size: 7.5rem;
+}
+
+.reli {
+    font-size: 6.5rem;
+}
+
+.dev {
+    font-size: 6.8rem;
+}
+
+.perkenalan p {
+    font-size: 3.2rem;
+    width: 55%;
+}
+
+.more-info {
+    margin: 2rem;
+}
+
+.more-tab {
+    margin: 1rem;
+}
