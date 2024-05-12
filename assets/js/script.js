@@ -18,8 +18,8 @@ document.getElementById('hide-nav').addEventListener('click', () => toggleNavbar
 document.querySelectorAll('.navbar a').forEach(link => {
     link.addEventListener('click', () => toggleNavbar('hide'));
 });
-/* More info */
 
+/* More info */
 const moreInfoBtn = document.getElementById('more-info')
 const moreTab = document.getElementById('more-tab')
 
