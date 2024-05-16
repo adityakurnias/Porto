@@ -127,6 +127,7 @@ nav a {
     color: #E6D5B8;
     word-spacing: 2px;
     padding: 1rem;
+    text-align: center;
 }
 
 .more-info {
@@ -184,9 +185,10 @@ nav a {
 .skill {
     width: 100vw;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px;
 }
 
 .skill h1 {
@@ -199,64 +201,25 @@ nav a {
     color: #E6D5B8;
 }
 
-/* Progress Bar */
-
-.progress-container {
-    width: 100%;
-    height: 4px;
-    overflow: hidden;
+.skill span {
+  color: #E6D5B8;
+  width: 100px;
+  height: auto;
+  font-size: 1rem;
+  background: #1b1a17;
+  border: 1px solid #403d35;
+  border-radius: 50px;
+  margin: 5px;
+  padding: 10px;
+  text-align: center; 
+  font-weight: Bold;
+  transition: color 0.2s ease-in, background 0.3s ease-in;
 }
 
-.progress-bar {
-    height: 4px;
-    background: #E6D5B8;
-    border-radius: 4px;
-    width: 0;
-    transition: width 1.1s ease-in-out;
-    transition-delay: 1s;
-}
-
-.progress-bar2 {
-    height: 4px;
-    background: #E6D5B8;
-    border-radius: 4px;
-    width: 0;
-    transition: width 0.8s ease-in-out;
-    transition-delay: 1.1s;
-}
-
-.progress-bar3 {
-    height: 4px;
-    background: #E6D5B8;
-    border-radius: 4px;
-    width: 0;
-    transition: width 1s ease-in-out;
-    transition-delay: 1.2s;
-}
-
-.progress-bar4 {
-    height: 4px;
-    background: #E6D5B8;
-    border-radius: 4px;
-    width: 0;
-    transition: width 1s ease-in-out;
-    transition-delay: 1.3s;
-}
-
-.more-tab.start .progress-bar {
-    width: 70%;
-}
-
-.more-tab.start .progress-bar2 {
-    width: 45%;
-}
-
-.more-tab.start .progress-bar3 {
-    width: 33%;
-}
-
-.more-tab.start .progress-bar4 {
-    width: 50%;
+.skill span:hover {
+  background: #E6D5B8;
+  color: #1B1A17;
+  border: 1px solid #403D3A;
 }
 
 /* Jobs */
@@ -325,7 +288,6 @@ nav a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
 }
 
 .project h2 {
@@ -339,13 +301,22 @@ nav a {
     z-index: 10;
 }
 
+.projectContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
 .container {
     position: relative;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-bottom: 1rem;
+    margin: 1rem;
 }
 
 .proj {
@@ -425,7 +396,7 @@ nav a {
 footer {
     height: auto;
     width: 100vw;
-    border-top: 2px solid #E6D5B8;
+    border-top: 1px solid #403d35;
 }
 
 .icon {
