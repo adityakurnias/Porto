@@ -296,9 +296,6 @@ nav a {
     font-size: 2rem;
     font-weight: bold;
     color: #E6D5B8;
-    position: sticky;
-    top: 12px;
-    z-index: 10;
 }
 
 .projectContainer {
@@ -351,8 +348,6 @@ nav a {
     font-size: 2rem;
     font-weight: bold;
     color: #E6D5B8;
-    position: sticky;
-    top: 12px;
 }
 
 .school {
@@ -386,8 +381,6 @@ nav a {
     font-size: 2rem;
     font-weight: bold;
     color: #E6D5B8;
-    position: sticky;
-    top: 12px;
     text-align: center;
 }
 
