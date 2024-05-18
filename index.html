@@ -15,21 +15,28 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <link
       rel="stylesheet"
-      media="screen and (min-width: 900px)"
+      media="screen and (min-width: 728px)"
       href="assets/css/desktop.css"
     />
   </head>
 
   <body>
+      
+    <div class="ring">Loading
+  <span></span>
+</div>
+      
     <div id="navbar" class="navbar">
-      <a id="hide-nav2" href="#perkenalan">Profile</a>
-      <a id="hide-nav2" href="#project">Project</a>
-      <a id="hide-nav2" href="#education">Education</a>
-      <a id="hide-nav2" href="#contact">Contact</a>
+      <div class="navContainer">
+          <a id="hide-nav2" href="#perkenalan">Profile</a>
+          <a id="hide-nav2" href="#project">Project</a>
+          <a id="hide-nav2" href="#education">Education</a>
+          <a id="hide-nav2" href="#contact">Contact</a>
 
-      <button id="hide-nav" class="show-hide">
-        <img src="assets/images/hambl.svg" />
-      </button>
+          <button id="hide-nav" class="show-hide">
+            <img src="assets/images/hambl.svg" />
+          </button> 
+      </div>
     </div>
     <nav>
       <a href="#welcome"><h1>Aditya.</h1></a>
@@ -98,7 +105,6 @@
             data-aos-anchor-placement="center-bottom"
             src="assets/images/arrowdown.svg"
             class="arrow"
-            width="30px"
           />
         </div>
       </section>
