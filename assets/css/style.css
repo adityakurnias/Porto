@@ -17,7 +17,6 @@ main {
     height: 100%;
 }
 
-
 /* Navigation bar */
 
 nav {
@@ -56,20 +55,12 @@ nav a {
     height: 0;
     background: #E6D5B8;
     position: fixed;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    transition: height 1.5s cubic-bezier(0.60, 0, 0.160, 1);
-}
-
-.navContainer {
-    height: 150px;
-    width: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
+    overflow: hidden;
+    transition: height 1.5s cubic-bezier(0.60, 0, 0.160, 1);
 }
 
 .navbar a {
@@ -318,8 +309,6 @@ nav a {
 }
 
 .container {
-    width: 350px;
-    height: 350px;
     position: relative;
     display: flex;
     justify-content: center;
@@ -329,8 +318,7 @@ nav a {
 }
 
 .proj {
-    width: 100%;
-    height: 100%;
+    width: 350px;
     border-radius: 50px;
     border: 1px solid #E6D5B8;
     margin-bottom: 2rem;
@@ -389,7 +377,7 @@ nav a {
 /* contact */
 
 .contact h2 {
-    margin-top: 1rem;
+    margin-top: 2.5rem;
     margin-bottom: 1rem;
     font-size: 2rem;
     font-weight: bold;
@@ -472,17 +460,13 @@ footer {
     color: #1B1A17;
 }
 
-.contact {
-    margin-top: 2rem;
-}
-
 .contactForm {
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 0 3rem 0; 
+    margin: 1rem 0 3rem 0; 
 }
 
 .field {
@@ -491,7 +475,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 12px 0 12px 0;
+    margin: 8px 0 12px 0;
 }
 
 .field label {
@@ -517,20 +501,20 @@ footer {
 }
 
 .field .submit {
-    width: 40%;
-    height: 40px;
-    padding: 8px;
-    font-size: 1rem;
-    background: transparent;
-    border: 1px solid #403d35;
-    border-radius: 1rem;
-    color: #E6D5B8;
-    transition: background 0.5s ease-in, color 0.5s ease-in;
+  width: 40%;
+  height: 40px;
+  padding: 8px;
+  font-size: 1rem;
+  background: transparent;
+  border: 1px solid #403d35;
+  border-radius: 1rem;
+  color: #E6D5B8;
+  transition: background 0.5s ease-in, color 0.5s ease-in;
 }
 
 .field .submit:hover {
-    background: #E6D5B8;
-    color: #1B1A17;
+  background: #E6D5B8;
+  color: #1B1A17;
 }
 
 /* Animation */
@@ -538,11 +522,9 @@ footer {
     0% {
         transform: translateX(6px);
     }
-
     50% {
         transform: translateX(-6px);
     }
-
     100% {
         transform: translateX(6px);
     }
@@ -552,11 +534,9 @@ footer {
     0% {
         transform: translateX(-5px);
     }
-
     50% {
         transform: translateX(5px);
     }
-
     100% {
         transform: translateX(-5px);
     }
