@@ -21,7 +21,7 @@
   </head>
 
   <body>
-    <div id="navbar" class="navbar">
+    <aside id="navbar" class="navbar">
       <a id="hide-nav2" href="#perkenalan">Profile</a>
       <a id="hide-nav2" href="#project">Project</a>
       <a id="hide-nav2" href="#education">Education</a>
@@ -30,7 +30,7 @@
       <button id="hide-nav" class="show-hide">
         <img src="assets/images/hambl.svg" />
       </button>
-    </div>
+    </aside>
     <nav>
       <a href="#welcome"><h1>Aditya.</h1></a>
       <button id="show-nav" class="show-hide">
@@ -40,7 +40,7 @@
 
     <main>
       <section id="welcome" class="welcome">
-        <div data-aos="zoom-in">
+        <div>
           <h1 class="reli">Reliable</h1>
           <h1 class="front">Frontend</h1>
           <h1 class="dev">Developer</h1>
@@ -48,12 +48,8 @@
       </section>
 
       <section
-        data-aos="fade-up"
-        data-aos-duration="600"
-        data-aos-anchor-placement="center-bottom"
         id="perkenalan"
-        class="perkenalan"
-      >
+        class="perkenalan aos" >
         <p>
           I am a student from SMK Plus Pelita Nusantara Bogor majoring in
           Software Engineering, Although still in the learning stage, I have a
@@ -84,44 +80,27 @@
           <a class="downCV" href="">Download CV</a>
         </div>
 
-        <div class="more-info" id="more-info">
-          <h3
-            data-aos="fade-up"
-            data-aos-duration="800"
-            data-aos-anchor-placement="center-bottom"
-          >
+        <div class="more-info aos" id="more-info">
+          <span>
             Click Me
-          </h3>
+          </span>
           <img
-            data-aos="fade-up"
-            data-aos-duration="800"
-            data-aos-anchor-placement="center-bottom"
             src="assets/images/arrowdown.svg"
             class="arrow"
           />
         </div>
       </section>
 
-      <section id="project" class="project">
-        <h2 data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+      <section id="project" class="project aos">
+        <h2>
           My Project.
         </h2>
         <div class="projectContainer">
-                  <div
-
-          data-aos="fade-right"
-
-          data-aos-anchor-placement="center-bottom"
-          class="container"
-        >
-          <h2>Projek</h2>
-          <img class="proj" src="assets/images/fakeproj1.jpg" />
-        </div>
-        <div
-          data-aos="fade-right"
-          data-aos-anchor-placement="center-bottom"
-          class="container"
-        >
+          <div class="container aos">
+            <h2>Projek</h2>
+            <img class="proj" src="assets/images/fakeproj1.jpg" />
+          </div>
+        <div class="container aos" >
           <h2>Projek</h2>
           <img class="proj" src="assets/images/fakeproj2.jpg" />
         </div>
@@ -129,67 +108,37 @@
       </section>
 
       <section id="education" class="education">
-        <h2 data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+        <h2 class="aos">
           Education.
         </h2>
-        <div
-          data-aos="fade-right"
-          data-aos-anchor-placement="center-bottom"
-          data-aos-duration="700"
-          class="school"
-        >
+        <div class="school aos">
           <h3>SDN Bedahan 02</h3>
           <h5>2014 - 2019</h5>
         </div>
-        <div
-          data-aos="fade-right"
-          data-aos-anchor-placement="center-bottom"
-          data-aos-duration="900"
-          class="school"
-        >
+        <div class="school aos">
           <h3>SMPI Ar-Ridho Depok</h3>
           <h5>2019 - 2023</h5>
         </div>
-        <div
-          data-aos="fade-right"
-          data-aos-anchor-placement="center-bottom"
-          data-aos-duration="1100"
-          class="school"
-        >
+        <div class="school aos">
           <h3>SMK Plus Pelita Nusantara</h3>
           <h5>2023 - NOW</h5>
         </div>
       </section>
 
-      <section class="contact" id="contact">
-        <h2 data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+      <section class="contact aos" id="contact">
+        <h2>
           Contact Me.
         </h2>
-        <form method="post" name="Contact Form" class="contactForm" id="myForm" netlify>
-          <p
-            data-aos="fade-right"
-            data-aos-anchor-placement="center-bottom"
-            data-aos-duration="700"
-            class="field"
-          >
+        <form method="post" name="Contact Form" class="contactForm" id="myForm">
+          <p class="field aos" >
             <label for="name">Name:</label>
             <input class="area" type="text" name="name" id="name" required />
           </p>
-          <p
-            data-aos="fade-right"
-            data-aos-anchor-placement="center-bottom"
-            data-aos-duration="900"
-            class="field"
-          >
+          <p class="field aos">
             <label for="email">Email:</label>
             <input class="area" type="email" name="email" id="email" required />
           </p>
-          <p
-            data-aos="fade-right"
-            data-aos-anchor-placement="center-bottom"
-            data-aos-duration="1100"
-            class="field"
-          >
+          <p class="field aos">
             <label for="comments">Message:</label>
             <textarea
               class="area"
@@ -198,12 +147,7 @@
               required
             ></textarea>
           </p>
-          <p
-            data-aos="fade-right"
-            data-aos-anchor-placement="center-bottom"
-            data-aos-duration="700"
-            class="field"
-          >
+          <p class="field aos">
             <input
               class="submit"
               type="submit"
@@ -232,17 +176,12 @@
       <div class="more">
         <h3>Let's make a Project together.</h3>
         <a href="mailto:adit34072@gmail.com">Contact Me</a>
-        <h4>@aditya kurnia s 2024</h4>
+        <span>©2024 aditya kurnia s</span>
       </div>
     </footer>
-
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="assets/js/email.js"></script>
     <script src="assets/js/script.js"></script>
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
-    ></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" ></script>
     <script type="text/javascript">
       (function () {
         emailjs.init({
@@ -250,58 +189,39 @@
         });
       })();
     </script>
-
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
       integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
       crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-
+      referrerpolicy="no-referrer" ></script>
     <script>
       $(document).ready(function () {
         $("#myForm").submit(function (event) {
           event.preventDefault(); // mencegah default action submit form (refresh halaman)
-
           var name = $("#name").val();
-
           var email = $("#email").val();
-
           if (name === "" || email === "") {
             alert("Tolong isi form");
           } else {
             sendMail();
-
             const Toast = Swal.mixin({
               toast: true,
-
               position: "top-end",
-
               showConfirmButton: false,
-
               timer: 2000,
-
               timerProgressBar: true,
-
               didOpen: (toast) => {
                 toast.onmouseenter = Swal.stopTimer;
-
                 toast.onmouseleave = Swal.resumeTimer;
               },
             });
-
             Toast.fire({
               icon: "success",
-
-              title: "Komentar terkirim!",
+              title: "Message sent
             });
-
             $("form#myForm").find("input").val("");
-
             $("#myForm").find("input")[0].focus();
-
             $("#message").val("");
           }
         });

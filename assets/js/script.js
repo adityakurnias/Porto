@@ -1,9 +1,3 @@
-//AOS
-AOS.init({
-    easing: 'ease-out-back',
-    duration: 1000
-});
-
 /* Navbar  */
 const navbar = document.getElementById('navbar');
 
