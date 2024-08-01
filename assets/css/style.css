@@ -6,11 +6,17 @@
     box-sizing: border-box;
     font-family: "Playfair Display";
     scroll-behavior: smooth;
+    -webkit-user-select: none;
     user-select: none;
 }
 
 body {
     background: #1B1A17;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 main {
@@ -60,7 +66,7 @@ nav a {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    transition: height 1.5s cubic-bezier(0.60, 0, 0.160, 1);
+    transition: all 1.5s cubic-bezier(0.60, 0, 0.160, 1);
 }
 
 .navbar a {
@@ -69,6 +75,7 @@ nav a {
     font-size: 3rem;
     margin: 16px;
     font-style: italic;
+    overflow: hidden;
 }
 
 .navbar.show {
@@ -78,7 +85,6 @@ nav a {
 .navbar.hide {
     height: 0;
 }
-
 
 /* Welcome message*/
 
@@ -455,9 +461,14 @@ footer {
     margin: 20px 0 8px 0;
 }
 
-.more a:hover {
+.contactme:hover {
     background: #E6D5B8;
     color: #1B1A17;
+}
+
+.more span {
+    color: #E6D5B8;
+    align-items: center;
 }
 
 .contactForm {
@@ -518,6 +529,7 @@ footer {
 }
 
 .aos {
+  will-change: transform;
   animation: aos linear;
   animation-range: entry 0 cover 30%;
   animation-timeline: view();
@@ -525,14 +537,23 @@ footer {
 
 /* Animation */
 
+/* @keyframes navload {
+    from {
+        height: 0;
+    }
+    to {
+        height: calc-size(auto);
+    }
+} */
+
 @keyframes aos {
   from {
-    scale: 0.7;
+    transform: scale(0.7);
     opacity: 0;
     transform: translateX(100px);
   }
   to {
-    scale: 1;
+    transform: scale(1);
     opacity: 1;
     transform: translateX(0);
   }

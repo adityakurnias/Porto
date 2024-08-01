@@ -22,19 +22,19 @@
 
   <body>
     <aside id="navbar" class="navbar">
-      <a id="hide-nav2" href="#perkenalan">Profile</a>
-      <a id="hide-nav2" href="#project">Project</a>
-      <a id="hide-nav2" href="#education">Education</a>
-      <a id="hide-nav2" href="#contact">Contact</a>
+      <a class="hide-nav2" href="#perkenalan">Profile</a>
+      <a class="hide-nav2" href="#project">Project</a>
+      <a class="hide-nav2" href="#education">Education</a>
+      <a class="hide-nav2" href="#contact">Contact</a>
 
       <button id="hide-nav" class="show-hide">
-        <img src="assets/images/hambl.svg" />
+        <img alt="hamburger" src="assets/images/hambl.svg" />
       </button>
     </aside>
     <nav>
       <a href="#welcome"><h1>Aditya.</h1></a>
       <button id="show-nav" class="show-hide">
-        <img src="assets/images/ham.svg" />
+        <img alt="hamburger" src="assets/images/ham.svg" />
       </button>
     </nav>
 
@@ -85,6 +85,7 @@
             Click Me
           </span>
           <img
+            alt="arrow"
             src="assets/images/arrowdown.svg"
             class="arrow"
           />
@@ -98,11 +99,11 @@
         <div class="projectContainer">
           <div class="container aos">
             <h2>Projek</h2>
-            <img class="proj" src="assets/images/fakeproj1.jpg" />
+            <img alt="fake" class="proj" src="assets/images/fakeproj1.jpg" />
           </div>
         <div class="container aos" >
           <h2>Projek</h2>
-          <img class="proj" src="assets/images/fakeproj2.jpg" />
+          <img alt="fake" class="proj" src="assets/images/fakeproj2.jpg" />
         </div>
         </div>
       </section>
@@ -139,7 +140,7 @@
             <input class="area" type="email" name="email" id="email" required />
           </p>
           <p class="field aos">
-            <label for="comments">Message:</label>
+            <label for="message">Message:</label>
             <textarea
               class="area"
               name="comments"
@@ -175,8 +176,8 @@
       </div>
       <div class="more">
         <h3>Let's make a Project together.</h3>
-        <a href="mailto:adit34072@gmail.com">Contact Me</a>
-        <span>©2024 aditya kurnia s</span>
+        <a class="contactme" href="mailto:adit34072@gmail.com">Contact Me</a>
+        <span>&copy;2024 <a href="https://github.com/adityakurnias">adityakurnias</a></span>
       </div>
     </footer>
     <script src="assets/js/email.js"></script>
@@ -218,7 +219,7 @@
             });
             Toast.fire({
               icon: "success",
-              title: "Message sent
+              title: "Message sent"
             });
             $("form#myForm").find("input").val("");
             $("#myForm").find("input")[0].focus();
