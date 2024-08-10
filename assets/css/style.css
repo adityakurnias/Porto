@@ -32,7 +32,7 @@ nav {
 
 nav h1 {
     color: #E6D5B8;
-    font-size: 2rem;
+    font-size: 1.2rem;
     margin-left: 8px;
 }
 
@@ -41,7 +41,7 @@ nav a {
 }
 
 .show-hide img {
-    width: 56px;
+    width: 44px;
 }
 
 .show-hide {
@@ -66,8 +66,8 @@ nav a {
 .navbar a {
     color: #1B1A17;
     text-decoration: none;
-    font-size: 3rem;
-    margin: 16px;
+    font-size: 1.8rem;
+    margin: 4px;
     font-style: italic;
 }
 
@@ -118,15 +118,15 @@ nav a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 1rem;
+    padding: 10px;
 }
 
 .perkenalan p {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-weight: 400;
     color: #E6D5B8;
     word-spacing: 2px;
-    padding: 1rem;
+    padding: 12px;
     text-align: center;
 }
 
