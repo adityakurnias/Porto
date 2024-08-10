@@ -1,9 +1,9 @@
 nav {
-    padding: 2rem;
+    padding: 1.8rem;
 }
 
 nav h1 {
-    font-size: 3.8rem;
+    font-size: 3.2rem;
 }
 
 .show-hide img {
@@ -11,8 +11,8 @@ nav h1 {
 }
 
 .navbar a {
-    font-size: 4.8rem;
-    margin: 32px; 
+    font-size: 3.5rem;
+    margin: 16px; 
 }
 
 .front {
@@ -28,7 +28,7 @@ nav h1 {
 }
 
 .perkenalan p {
-    font-size: 3.4rem;
+    font-size: 3rem;
     width: 65%;
 }
 
