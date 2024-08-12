@@ -82,6 +82,10 @@ nav h1 {
   padding: 1rem;
 }
 
+.proj {
+  width: 600px;
+}
+
 .school {
     width: 55%;
     border: 2px solid #E6D5B8;

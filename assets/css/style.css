@@ -9,8 +9,34 @@
     user-select: none;
 }
 
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 12px; 
+}
+
+::-webkit-scrollbar-track {
+    background: #403d35;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #E6D5B8; 
+    border-radius: 10px;
+    border: 3px solid #1B1A17; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #C0A57D; 
+}
+
+/* For Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #E6D5B8 #403d35; 
+}
+
 body {
     background: #1B1A17;
+    overflow-x: hidden;
 }
 
 main {
