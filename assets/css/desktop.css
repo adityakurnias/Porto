@@ -7,11 +7,11 @@ nav h1 {
 }
 
 .show-hide img {
-    width: 86px;
+    width: 76px;
 }
 
 .navbar a {
-    font-size: 3.5rem;
+    font-size: 3.8rem;
     margin: 16px; 
 }
 
@@ -63,19 +63,19 @@ nav h1 {
 }
 
 .skill span {
-  font-size: 1.6rem;
-  width: 160px;
-  padding: 1.2rem;
+  font-size: 1.2rem;
+  width: 120px;
+  padding: 1rem;
   border: 2px solid #403d35;
 }
 
-.jobs h4 {
-  font-size: 1.7rem;
-  padding: 1.7rem;
+.jobs h2 {
+  font-size: 1.4rem;
+  padding: 1.3rem;
   border: 2px solid #403d35;
 }
 
-.downCV {
+.cv {
   font-size: 1.7rem;
   border: 2px solid #403d35;
   width: 45%;
@@ -83,14 +83,14 @@ nav h1 {
 }
 
 .proj {
-  width: 600px;
+  width: 100%;
 }
 
 .school {
-    width: 55%;
-    border: 2px solid #E6D5B8;
-    padding: 1.2rem;
-    margin: 14px;
+  width: 45%;
+  border: 2px solid #E6D5B8;
+  padding: 1.2rem;
+  margin: 14px;
 }
 
 .school h3 {
