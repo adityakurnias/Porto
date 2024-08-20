@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
-
 * {
     margin: 0;
     padding: 0;
@@ -35,6 +34,8 @@
     scrollbar-color: #E6D5B8 #403d35; 
 }
 
+/* Body */
+
 body {
     background: #1B1A17;
     overflow-x: hidden;
@@ -45,7 +46,6 @@ main {
 }
 
 /* Navigation bar */
-
 nav {
     position: fixed;
     top: 0;
@@ -249,16 +249,15 @@ nav a {
   text-align: center; 
   font-weight: Bold;
   transition: color 0.2s ease-in, background 0.3s ease-in;
-}
 
-.skill span:hover {
-  background: #E6D5B8;
-  color: #1B1A17;
-  border: 1px solid #403D3A;
+  &:hover {
+    background: #E6D5B8;
+    color: #1B1A17;
+    border: 1px solid #403D3A;
+  }
 }
 
 /* Jobs */
-
 .jobs {
     width: 100%;
     height: auto;
@@ -284,16 +283,15 @@ nav a {
     padding: 10px;
     text-align: center;
     transition: color 0.4s ease-in, background 0.5s ease-in;
+
+    &:hover {
+        background: #E6D5B8;
+        color: #1B1A17;
+        border: 1px solid #403D3A;
+    }
 }
 
-.jobs h2:hover {
-    background: #E6D5B8;
-    color: #1B1A17;
-    border: 1px solid #403D3A;
-}
-
-/* dowload */
-
+/* CV */
 .cv {
     width: 50%;
     height: auto;
@@ -302,22 +300,21 @@ nav a {
     font-weight: bold;
     font-size: 1rem;
     border: 1px solid #403d35;
-    border-radius: 100px;
+    border-radius: 50px;
     background: #1B1A17;
     padding: 8px;
     margin-top: 5%;
     text-align: center;
     transition: color 0.4s ease-in, background 0.5s ease-in;
+
+    &:hover {
+        background: #E6D5B8;
+        color: #1B1A17;
+        border: 1px solid #403D3A;
+    }
 }
 
-.cv:hover {
-    background: #E6D5B8;
-    color: #1B1A17;
-    border: 1px solid #403D3A;
-}
-
-/* Project */
-
+/* Projects */
 .project {
     width: 100vw;
     margin-bottom: 1rem;
@@ -387,9 +384,11 @@ nav a {
     font-size: 1rem;
     line-height: 1.5;
 }
-/*education */
 
-.education {
+
+/*Schools */
+
+.schools {
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -397,7 +396,7 @@ nav a {
     align-items: center;
 }
 
-.education h2 {
+.schools h2 {
     margin-top: 1rem;
     margin-bottom: 1rem;
     font-size: 2rem;
@@ -498,6 +497,11 @@ footer {
     border-radius: 10px;
     padding: 6px;
     transition: background 0.6s ease-in, color 0.5s ease-in;
+
+    &:hover {
+        background: #E6D5B8;
+        color: #1B1A17;
+    }
 }
 
 .more {
@@ -507,11 +511,6 @@ footer {
     justify-content: center;
     align-items: center;
     margin: 20px 0 8px 0;
-}
-
-.more a:hover {
-    background: #E6D5B8;
-    color: #1B1A17;
 }
 
 .contactForm {
@@ -548,10 +547,10 @@ footer {
     resize: none;
     outline: none;
     transition: border-color 0.3s ease;
-}
 
-.area:focus {
-    border-color: #E6D5B8;
+    &:focus {
+        border-color: #E6D5B8;
+    }
 }
 
 .field .submit {
@@ -564,11 +563,11 @@ footer {
   border-radius: 1rem;
   color: #E6D5B8;
   transition: background 0.5s ease-in, color 0.5s ease-in;
-}
 
-.field .submit:hover {
-  background: #E6D5B8;
-  color: #1B1A17;
+  &:hover {
+    background: #E6D5B8;
+    color: #1B1A17;
+  }
 }
 
 /* Animation */
