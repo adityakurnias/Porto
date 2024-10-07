@@ -26,3 +26,27 @@ const moreTab = document.getElementById('more-tab')
 moreInfoBtn.addEventListener('click', () => {
     moreTab.classList.toggle('start')
 })
+
+const sections = document.querySelectorAll('section')
+const navLink = document.getElementsByClassName('nlink')
+
+window.addEventListener('scroll', () => {
+    let current = ''
+
+    sections.forEach(section => {
+        const sectTop = section.offsetTop
+        const sectHeight = section.clientHeight
+
+        if ( window.scrollY >= sectTop - sectHeight / 3 ) {
+            current = section.getAttribute('id')
+        }
+    })
+
+    Array.from(navLink).forEach(link => {
+        link.classList.remove('active') 
+
+        if ( link.getAttribute('href') === `#${current}` ) {
+            link.classList.add('active')
+        }
+    })
+})
