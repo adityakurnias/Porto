@@ -5,11 +5,7 @@ function sendMail(){
     message : document.getElementById("message").value,
   }
   
-  emailjs.send('service_a4y09p7', 'template_pqjgq6x', parms).then(
+  emailjs.send('', '', parms).then(
   console.log("pesan terkirim")
   )
-}
-
-function tes() {
-  alert("tes")
 }
