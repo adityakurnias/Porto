@@ -27,7 +27,6 @@
       media="screen and (min-width: 728px)"
       href="assets/css/desktop.css"
     />
-    <!--     Lenis -->
     <script
       src="https://unpkg.com/lenis@1.1.17/dist/lenis.min.js"
       defer
@@ -36,30 +35,30 @@
   </head>
 
   <body>
-    <a href="#main-content" class="skip-link">Skip to main content</a>
-    <header>
-      <div id="navbar" class="navbar" role="navigation" aria-label="Main Navigation">
-        <a class="nlink" href="#perkenalan">Profile</a>
-        <a class="nlink" href="#project">Project</a>
-        <a class="nlink" href="#educations">Education</a>
-        <a class="nlink" href="#contact">Contact</a>
+    <!-- Improved navigation with ARIA labels -->
+    <div id="navbar" class="navbar" role="navigation" aria-label="Main navigation">
+      <a class="nlink" href="#perkenalan" aria-label="Go to Profile section">Profile</a>
+      <a class="nlink" href="#project" aria-label="Go to Projects section">Project</a>
+      <a class="nlink" href="#educations" aria-label="Go to Education section">Education</a>
+      <a class="nlink" href="#contact" aria-label="Go to Contact section">Contact</a>
 
-        <button id="hide-nav" class="show-hide" aria-label="Hide Navigation">
-          <img src="assets/images/hambl.svg" alt="Hide Navigation" />
-        </button>
-      </div>
-      <nav>
-        <a href="#welcome"><h1>Aditya.</h1></a>
-        <button id="show-nav" class="show-hide" aria-label="Show Navigation">
-          <img src="assets/images/ham.svg" alt="Show Navigation" />
-        </button>
-      </nav>
-    </header>
+      <button id="hide-nav" class="show-hide" aria-label="Hide navigation menu">
+        <img src="assets/images/hambl.svg" alt="Hide menu icon" />
+      </button>
+    </div>
+    <nav role="navigation" aria-label="Brand navigation">
+      <a href="#welcome" aria-label="Go to welcome section"><h1>Aditya.</h1></a>
+      <button id="show-nav" class="show-hide" aria-label="Show navigation menu">
+        <img src="assets/images/ham.svg" alt="Show menu icon" />
+      </button>
+    </nav>
 
-    <main id="main-content">
-      <section id="welcome" class="welcome" aria-labelledby="welcome-heading">
+    <main>
+      <section id="welcome" class="welcome" aria-label="Welcome section">
         <div data-aos="zoom-in">
-          <h2 id="welcome-heading" class="reli">Reliable Frontend Developer</h2>
+          <h2 class="reli">Reliable</h2>
+          <h2 class="front">Frontend</h2>
+          <h2 class="dev">Developer</h2>
         </div>
       </section>
 
@@ -69,50 +68,49 @@
         data-aos-anchor-placement="center-bottom"
         id="perkenalan"
         class="perkenalan"
-        aria-labelledby="perkenalan-heading"
+        aria-label="Profile section"
       >
-        <h2 id="perkenalan-heading">Introduction</h2>
         <p>
-          I'm a passionate Software Engineering student in SMK Plus Pelita
+          I'm a passionate Software Engineering student in SMK Plus Pelita
           Nusantara Bogor who loves frontend and game development.
         </p>
         <div class="more-tab" id="more-tab">
-          <img src="assets/images/saya.jpg" alt="Aditya Kurnia Saputra" />
+          <img src="assets/images/saya.jpg" alt="Aditya Kurnia Saputra - Portrait photo" />
           <h1>Aditya Kurnia Saputra.</h1>
           <p class="moreabout">
-            Although new to the scene, I'm dedicated to learning web
+            Although new to the scene, I'm dedicated to learning web
             technologies and game engines. It pushes me to learn new programming
-            skills and I always try to come out of my comfort zone and do
+            skills and I always try to come out of my comfort zone and do
             something different like making beautiful UIs using modern-day
             frontend frameworks or designing game mechanics, etc. I love
-            learning and exploring new development tools and technologies,
+            learning and exploring new development tools and technologies,
             whether that be in web or game development.
           </p>
-          <div class="jobs">
+          <div class="jobs" role="list">
             <h2>Frontend Developer</h2>
             <h2>Game Developer</h2>
           </div>
 
           <h2>Skills.</h2>
 
-          <div class="skill">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JS/TS</span>
-            <span>Tailwind</span>
-            <span>React JS</span>
-            <span>Nuxt</span>
-            <span>Vue JS</span>
-            <span>C++</span>
-            <span>SQL</span>
-            <span>PHP</span>
-            <span>Godot</span>
+          <div class="skill" role="list" aria-label="Technical skills">
+            <span role="listitem">HTML</span>
+            <span role="listitem">CSS</span>
+            <span role="listitem">JS/TS</span>
+            <span role="listitem">Tailwind</span>
+            <span role="listitem">React JS</span>
+            <span role="listitem">Nuxt</span>
+            <span role="listitem">Vue JS</span>
+            <span role="listitem">C++</span>
+            <span role="listitem">SQL</span>
+            <span role="listitem">PHP</span>
+            <span role="listitem">Godot</span>
           </div>
 
-          <a class="cv" href="/assets/Docs/CVAdit.docx">CV</a>
+          <a class="cv" href="/assets/Docs/CVAdit.docx" aria-label="Download CV">CV</a>
         </div>
 
-        <div class="more-info" id="more-info">
+        <div class="more-info" id="more-info" role="button" tabindex="0" aria-label="Click to show more information">
           <h3
             data-aos="fade-up"
             data-aos-duration="800"
@@ -125,28 +123,29 @@
             data-aos-duration="800"
             data-aos-anchor-placement="center-bottom"
             src="assets/images/arrowdown.svg"
+            alt="Scroll down arrow"
             class="arrow"
-            alt="Arrow Down"
           />
         </div>
       </section>
 
-      <section id="project" class="project" aria-labelledby="project-heading">
-        <h2 id="project-heading" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+      <section id="project" class="project" aria-label="Projects section">
+        <h2 data-aos="fade-up" data-aos-anchor-placement="center-bottom">
           My Project.
         </h2>
-        <div class="projectContainer">
+        <div class="projectContainer" role="list">
           <div
             data-aos="fade-right"
             data-aos-anchor-placement="center-bottom"
             class="container"
+            role="listitem"
           >
-            <a href="" target="_blank">
+            <a href="" target="_blank" aria-label="View E-Voting PENUS project">
               <div class="image-container">
                 <img
                   class="proj"
                   src="/assets/images/evote.jpg"
-                  alt="E-Voting PENUS Project"
+                  alt="E-Voting PENUS project screenshot"
                 />
                 <div class="project-name">E-Voting PENUS</div>
               </div>
@@ -164,10 +163,11 @@
             data-aos="fade-right"
             data-aos-anchor-placement="center-bottom"
             class="container"
+            role="listitem"
           >
-            <a href="" target="_blank">
+            <a href="" target="_blank" aria-label="View PENUS CBT project">
               <div class="image-container">
-                <img class="proj" src="/assets/images/cbt.png" alt="PENUS CBT Project" />
+                <img class="proj" src="/assets/images/cbt.png" alt="PENUS CBT project screenshot" />
                 <div class="project-name">PENUS CBT</div>
               </div>
             </a>
@@ -182,8 +182,8 @@
         </div>
       </section>
 
-      <section id="educations" class="schools" aria-labelledby="education-heading">
-        <h2 id="education-heading" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+      <section id="educations" class="schools" aria-label="Education section">
+        <h2 data-aos="fade-up" data-aos-anchor-placement="center-bottom">
           Education.
         </h2>
         <div
@@ -191,6 +191,7 @@
           data-aos-anchor-placement="center-bottom"
           data-aos-duration="700"
           class="school"
+          role="article"
         >
           <h3>SDN Bedahan 02</h3>
           <h5>2014 - 2019</h5>
@@ -200,6 +201,7 @@
           data-aos-anchor-placement="center-bottom"
           data-aos-duration="900"
           class="school"
+          role="article"
         >
           <h3>SMPI Ar-Ridho Depok</h3>
           <h5>2019 - 2023</h5>
@@ -209,14 +211,15 @@
           data-aos-anchor-placement="center-bottom"
           data-aos-duration="1100"
           class="school"
+          role="article"
         >
           <h3>SMK Plus Pelita Nusantara</h3>
           <h5>2023 - NOW</h5>
         </div>
       </section>
 
-      <section class="contact" id="contact" aria-labelledby="contact-heading">
-        <h2 id="contact-heading" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+      <section class="contact" id="contact" aria-label="Contact section">
+        <h2 data-aos="fade-up" data-aos-anchor-placement="center-bottom">
           Contact Me.
         </h2>
         <form
@@ -225,7 +228,8 @@
           class="contactForm"
           id="myForm"
           netlify
-          aria-label="Contact Form"
+          role="form"
+          aria-label="Contact form"
         >
           <p
             data-aos="fade-right"
@@ -234,7 +238,15 @@
             class="field"
           >
             <label for="name">Name:</label>
-            <input class="area" type="text" name="name" id="name" required aria-required="true" />
+            <input 
+              class="area" 
+              type="text" 
+              name="name" 
+              id="name" 
+              required 
+              aria-required="true"
+              aria-label="Enter your name"
+            />
           </p>
           <p
             data-aos="fade-right"
@@ -243,7 +255,15 @@
             class="field"
           >
             <label for="email">Email:</label>
-            <input class="area" type="email" name="email" id="email" required aria-required="true" />
+            <input 
+              class="area" 
+              type="email" 
+              name="email" 
+              id="email" 
+              required 
+              aria-required="true"
+              aria-label="Enter your email"
+            />
           </p>
           <p
             data-aos="fade-right"
@@ -251,13 +271,14 @@
             data-aos-duration="1100"
             class="field"
           >
-            <label for="comments">Message:</label>
+            <label for="message">Message:</label>
             <textarea
               class="area"
               name="comments"
               id="message"
               required
               aria-required="true"
+              aria-label="Enter your message"
             ></textarea>
           </p>
           <p
@@ -270,6 +291,7 @@
               class="submit"
               type="submit"
               value="Submit"
+              aria-label="Submit form"
               onclick="alert('This feature is temporarily suspended, please contact my email directly instead')"
             />
           </p>
@@ -277,27 +299,28 @@
       </section>
     </main>
 
-    <footer>
-      <div class="icon">
-        <a href="https://github.com/adityakurnias" aria-label="GitHub Profile">
-          <img src="assets/images/github.svg" alt="GitHub" />
+    <footer role="contentinfo">
+      <div class="icon" role="navigation" aria-label="Social media links">
+        <a href="https://github.com/adityakurnias" aria-label="Visit my GitHub profile">
+          <img src="assets/images/github.svg" alt="GitHub icon" />
         </a>
 
-        <a href="https://id.linkedin.com/in/aditya-kurnia-saputra-6b9421308" aria-label="LinkedIn Profile">
-          <img src="assets/images/link.svg" alt="LinkedIn" />
+        <a href="https://id.linkedin.com/in/aditya-kurnia-saputra-6b9421308" aria-label="Visit my LinkedIn profile">
+          <img src="assets/images/link.svg" alt="LinkedIn icon" />
         </a>
 
-        <a href="https://www.instagram.com/dikrcy?igsh=Y2lzNDBqOW8wN3Vk" aria-label="Instagram Profile">
-          <img src="assets/images/ig.svg" alt="Instagram" />
+        <a href="https://www.instagram.com/dikrcy?igsh=Y2lzNDBqOW8wN3Vk" aria-label="Visit my Instagram profile">
+          <img src="assets/images/ig.svg" alt="Instagram icon" />
         </a>
       </div>
       <div class="more">
         <h3>Let's make a Project together.</h3>
-        <a href="mailto:adityakurniasaputra903@gmail.com">Contact Me</a>
+        <a href="mailto:adityakurniasaputra903@gmail.com" aria-label="Send me an email">Contact Me</a>
         <h4>@adityakurnias 2025</h4>
       </div>
     </footer>
 
+    <!-- Scripts remain unchanged -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="assets/js/email.js"></script>
     <script src="assets/js/script.js"></script>
@@ -325,7 +348,7 @@
     <script>
       $(document).ready(function () {
         $("#myForm").submit(function (event) {
-          event.preventDefault(); // mencegah default action submit form (refresh halaman)
+          event.preventDefault();
           var name = $("#name").val();
           var email = $("#email").val();
           if (name === "" || email === "") {
