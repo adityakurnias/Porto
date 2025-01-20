@@ -46,12 +46,18 @@ nav h1 {
     width: 60%;
 }
 
+.more-tab p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
 .more-tab img {
   width: 400px;
 }
 
 .more-tab.start {
-  height: 1200px;
+  height: 1500px;
+  max-height: fit-content;
 }
 
 .more-tab h2 {
@@ -70,7 +76,7 @@ nav h1 {
 }
 
 .jobs h2 {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   padding: 1.3rem;
   border: 2px solid #403d35;
 }

@@ -4,6 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Aditya Kurnia Saputra" />
+    <meta
+      name="description"
+      content="Portfolio of Aditya Kurnia Saputra, a passionate Software Engineering student specializing in Frontend Development and Game Development."
+    />
+    <meta
+      name="keywords"
+      content="Aditya Kurnia Saputra, Frontend Developer, Game Developer, Software Engineering, Portfolio"
+    />
 
     <title>Portofolio | Aditya Kurnia Saputra</title>
 
@@ -18,7 +27,7 @@
       media="screen and (min-width: 728px)"
       href="assets/css/desktop.css"
     />
-<!--     Lenis -->
+    <!--     Lenis -->
     <script
       src="https://unpkg.com/lenis@1.1.17/dist/lenis.min.js"
       defer
@@ -61,35 +70,43 @@
         class="perkenalan"
       >
         <p>
-          I am a student from SMK Plus Pelita Nusantara Bogor majoring in
-          Software Engineering, Although still in the learning stage, I have a
-          high enthusiasm to continue learning and developing myself in the
-          field of Software Engineering.
+          I'm a passionate Software Engineering student in SMK Plus Pelita
+          Nusantara Bogor who loves frontend and game development.
         </p>
         <div class="more-tab" id="more-tab">
           <img src="assets/images/saya.jpg" alt="Aditya Kurnia Saputra" />
           <h1>Aditya Kurnia Saputra.</h1>
-
+          <p class="moreabout">
+            Although new to the scene, I'm dedicated to learning web
+            technologies and game engines. It pushes me to learn new programming
+            skills and I always try to come out of my comfort zone and do
+            something different like making beautiful UIs using modern-day
+            frontend frameworks or designing game mechanics, etc. I love
+            learning and exploring new development tools and technologies,
+            whether that be in web or game development.
+          </p>
           <div class="jobs">
             <h2>Frontend Developer</h2>
+            <h2>Game Developer</h2>
           </div>
-          
-          <h2>Skills.</h2> 
+
+          <h2>Skills.</h2>
 
           <div class="skill">
             <span>HTML</span>
             <span>CSS</span>
-            <span>JS</span>
+            <span>JS/TS</span>
             <span>Tailwind</span>
             <span>React JS</span>
             <span>Nuxt</span>
-            <span>Vue.JS</span>
+            <span>Vue JS</span>
             <span>C++</span>
             <span>SQL</span>
             <span>PHP</span>
+            <span>Godot</span>
           </div>
 
-          <a class="cv" href="/assets/Docs/CVAdit.docx">My CV</a>
+          <a class="cv" href="/assets/Docs/CVAdit.docx">CV</a>
         </div>
 
         <div class="more-info" id="more-info">
@@ -115,36 +132,50 @@
           My Project.
         </h2>
         <div class="projectContainer">
-          <div data-aos="fade-right" data-aos-anchor-placement="center-bottom" class="container">
+          <div
+            data-aos="fade-right"
+            data-aos-anchor-placement="center-bottom"
+            class="container"
+          >
             <a href="" target="_blank">
               <div class="image-container">
-                <img class="proj" src="/assets/images/evote.jpg" alt="Project"/>
+                <img
+                  class="proj"
+                  src="/assets/images/evote.jpg"
+                  alt="Project"
+                />
                 <div class="project-name">E-Voting PENUS</div>
               </div>
             </a>
             <div class="project-details">
               <p>
-                PENUS E-VOTING is an application that allows users to vote in elections. It provides a secure and user-friendly platform for conducting online voting.
+                PENUS E-VOTING is an application that allows users to vote in
+                elections. It provides a secure and user-friendly platform for
+                conducting online voting.
               </p>
             </div>
           </div>
 
-          <div data-aos="fade-right" data-aos-anchor-placement="center-bottom" class="container">
+          <div
+            data-aos="fade-right"
+            data-aos-anchor-placement="center-bottom"
+            class="container"
+          >
             <a href="" target="_blank">
               <div class="image-container">
-                <img class="proj" src="/assets/images/cbt.png" alt="Project"/>
+                <img class="proj" src="/assets/images/cbt.png" alt="Project" />
                 <div class="project-name">PENUS CBT</div>
               </div>
             </a>
             <div class="project-details">
               <p>
-                CBT (Computer Based Test) is a web application for conducting online exams through the website, relying on speed, security and other excellent features.
+                CBT (Computer Based Test) is a web application for conducting
+                online exams through the website, relying on speed, security and
+                other excellent features.
               </p>
             </div>
           </div>
         </div>
-        
-        
       </section>
 
       <section id="educations" class="schools">
@@ -184,7 +215,13 @@
         <h2 data-aos="fade-up" data-aos-anchor-placement="center-bottom">
           Contact Me.
         </h2>
-        <form method="post" name="Contact Form" class="contactForm" id="myForm" netlify>
+        <form
+          method="post"
+          name="Contact Form"
+          class="contactForm"
+          id="myForm"
+          netlify
+        >
           <p
             data-aos="fade-right"
             data-aos-anchor-placement="center-bottom"
@@ -283,44 +320,31 @@
       $(document).ready(function () {
         $("#myForm").submit(function (event) {
           event.preventDefault(); // mencegah default action submit form (refresh halaman)
-
           var name = $("#name").val();
-
           var email = $("#email").val();
-
           if (name === "" || email === "") {
             alert("Tolong isi form");
           } else {
             sendMail();
-
             const Toast = Swal.mixin({
               toast: true,
-
               position: "top-end",
-
               showConfirmButton: false,
-
               timer: 2000,
-
               timerProgressBar: true,
-
               didOpen: (toast) => {
                 toast.onmouseenter = Swal.stopTimer;
-
                 toast.onmouseleave = Swal.resumeTimer;
               },
             });
 
             Toast.fire({
               icon: "success",
-
               title: "Komentar terkirim!",
             });
 
             $("form#myForm").find("input").val("");
-
             $("#myForm").find("input")[0].focus();
-
             $("#message").val("");
           }
         });
