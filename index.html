@@ -17,25 +17,16 @@
     <title>Portofolio | Aditya Kurnia Saputra</title>
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link
       rel="stylesheet"
       media="screen and (min-width: 728px)"
       href="assets/css/desktop.css"
     />
-    <script
-      src="https://unpkg.com/lenis@1.1.17/dist/lenis.min.js"
-      defer
-    ></script>
     <script src="/assets/js/script.js" defer></script>
   </head>
 
   <body>
-    <!-- Improved navigation with ARIA labels -->
     <div
       id="navbar"
       class="navbar"
@@ -69,9 +60,9 @@
     <main>
       <section id="welcome" class="welcome" aria-label="Welcome section">
         <div data-aos="zoom-in">
-          <h2 class="reli">Reliable</h2>
-          <h2 class="front">Frontend</h2>
-          <h2 class="dev">Developer</h2>
+          <h2 class="reli">Creative</h2>
+          <h2 class="front">Frontend Developer <span class="and">and</span></h2>
+          <h2 class="dev">Game Developer</h2>
         </div>
       </section>
 
@@ -88,26 +79,24 @@
           Nusantara Bogor who loves frontend and game development.
         </p>
         <div class="more-tab" id="more-tab">
-          <img
+          <!-- <img
             src="assets/images/saya.jpg"
             alt="Aditya Kurnia Saputra - Portrait photo"
-          />
-          <h1>Aditya Kurnia Saputra.</h1>
+          /> -->
+          <h2 class="name">Aditya Kurnia Saputra.</h2>
           <p class="moreabout">
             Although new to the scene, I'm dedicated to learning web
-            technologies and game engines. It pushes me to learn new programming
-            skills and I always try to come out of my comfort zone and do
-            something different like making beautiful UIs using modern-day
-            frontend frameworks or designing game mechanics, etc. I love
+            technologies and game development. It pushes me to learn new programming
+            skills and I always try to come out of my comfort zone. I love
             learning and exploring new development tools and technologies,
             whether that be in web or game development.
           </p>
           <div class="jobs" role="list">
-            <h2>Frontend Developer</h2>
+            <h2>Frontend Web Developer</h2>
             <h2>Game Developer</h2>
           </div>
 
-          <h2>Skills.</h2>
+          <h2 class="tech">Tech.</h2>
 
           <div class="skill" role="list" aria-label="Technical skills">
             <span role="listitem">HTML</span>
@@ -117,9 +106,9 @@
             <span role="listitem">React JS</span>
             <span role="listitem">Nuxt</span>
             <span role="listitem">Vue JS</span>
-            <span role="listitem">C++</span>
             <span role="listitem">SQL</span>
             <span role="listitem">PHP</span>
+            <span role="listitem">GDScript</span>
             <span role="listitem">Godot</span>
           </div>
 
@@ -246,7 +235,7 @@
         </div>
       </section>
 
-      <section class="contact" id="contact" aria-label="Contact section">
+      <!-- <section class="contact" id="contact" aria-label="Contact section">
         <h2 data-aos="fade-up" data-aos-anchor-placement="center-bottom">
           Contact Me.
         </h2>
@@ -324,10 +313,10 @@
             />
           </p>
         </form>
-      </section>
+      </section> -->
     </main>
-
-    <footer role="contentinfo">
+    
+    <footer role="contentinfo" id="contact">
       <div class="icon" role="navigation" aria-label="Social media links">
         <a
           href="https://github.com/adityakurnias"
@@ -360,65 +349,9 @@
         <h4>@adityakurnias 2025</h4>
       </div>
     </footer>
-
-    <!-- Scripts remain unchanged -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="assets/js/email.js"></script>
-    <script src="assets/js/script.js"></script>
     <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
-    ></script>
-    <script type="text/javascript">
-      (function () {
-        emailjs.init({
-          publicKey: "",
-        });
-      })();
-    </script>
-
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-
-    <script>
-      $(document).ready(function () {
-        $("#myForm").submit(function (event) {
-          event.preventDefault();
-          var name = $("#name").val();
-          var email = $("#email").val();
-          if (name === "" || email === "") {
-            alert("Tolong isi form");
-          } else {
-            sendMail();
-            const Toast = Swal.mixin({
-              toast: true,
-              position: "top-end",
-              showConfirmButton: false,
-              timer: 2000,
-              timerProgressBar: true,
-              didOpen: (toast) => {
-                toast.onmouseenter = Swal.stopTimer;
-                toast.onmouseleave = Swal.resumeTimer;
-              },
-            });
-
-            Toast.fire({
-              icon: "success",
-              title: "Komentar terkirim!",
-            });
-
-            $("form#myForm").find("input").val("");
-            $("#myForm").find("input")[0].focus();
-            $("#message").val("");
-          }
-        });
-      });
-    </script>
+    src="https://unpkg.com/lenis@1.1.17/dist/lenis.min.js"
+  ></script>
   </body>
 </html>

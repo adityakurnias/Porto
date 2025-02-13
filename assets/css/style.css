@@ -125,26 +125,33 @@ nav a {
 }
 
 .front {
-  font-size: 4rem;
+  font-size: 10vw; /* Menggunakan vw untuk ukuran font responsif */
   font-style: normal;
+  text-wrap-mode: nowrap;
   animation: go 5s ease-in-out infinite;
 }
 
+.and {
+  font-size: 1vw; /* Menggunakan vw untuk ukuran font responsif */
+  position: absolute;
+  right: 50%;
+  bottom: -10px;
+}
+
 .reli {
-  font-size: 3.5rem;
+  font-size: 9vw; /* Menggunakan vw untuk ukuran font responsif */
   font-style: italic;
   font-weight: 400;
   animation: move 5s ease-in-out infinite;
 }
 
 .dev {
-  font-size: 3.6rem;
+  font-size: 8vw; /* Menggunakan vw untuk ukuran font responsif */
   font-style: italic;
   font-weight: 600;
   animation: go 4s ease-in-out infinite;
 }
 
-/* Profile */
 .perkenalan {
   min-height: 100vh;
   display: flex;
@@ -173,6 +180,7 @@ nav a {
   color: #e6d5b8;
   font-weight: bold;
   font-size: 1rem;
+  cursor: pointer;
   animation: jiggle 1s ease-in-out infinite;
 }
 
@@ -209,14 +217,14 @@ nav a {
   margin-top: 8px;
 }
 
-.more-tab h1 {
+.more-tab .name {
   font-size: 1rem;
   color: #e6d5b8;
   margin-bottom: 1rem;
   overflow: hidden;
 }
 
-.more-tab h2 {
+.more-tab .tech {
   font-size: 1rem;
   color: #e6d5b8;
   margin-bottom: 1rem;
@@ -224,7 +232,7 @@ nav a {
 }
 
 .more-tab p {
-  font-size: 0.5rem;
+  font-size: 1rem;
 }
 
 .skill {
@@ -233,14 +241,6 @@ nav a {
   justify-content: center;
   flex-wrap: wrap;
   padding: 10px;
-}
-
-.more-tab h2 {
-  font-size: 1.3rem;
-}
-
-.more-tab h1 {
-  font-size: 1.4rem;
 }
 
 .skill span {

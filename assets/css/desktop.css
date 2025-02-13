@@ -16,7 +16,14 @@ nav h1 {
 }
 
 .front {
-    font-size: 7.6rem;
+    font-size: 6rem;
+}
+
+.and {
+  font-size: small;
+  position: absolute;
+  right: 50%;
+  bottom: -15px;
 }
 
 .reli {
@@ -56,15 +63,15 @@ nav h1 {
 }
 
 .more-tab.start {
-  height: 1500px;
-  max-height: fit-content;
+  height: 1000px;
+  max-height: min-content;
 }
 
-.more-tab h2 {
+.more-tab .tech {
     font-size: 1.4rem;
 }
 
-.more-tab h1 {
+.more-tab .name {
     font-size: 1.5rem;
 }
 
