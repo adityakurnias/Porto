@@ -1,83 +1,77 @@
 seo:
-  title: "Emma Thompson - UX/UI Designer"
-  description: "Welcome to my portfolio! I'm Emma Thompson, a UX/UI designer and front-end developer based in Boston. I specialize in creating user-centered digital experiences that are both beautiful and functional."
-title: "Hey, I'm Emma Thompson UX/UI Designer"
-description: "I craft intuitive digital experiences where design meets functionality. Based in Boston, bringing ideas to life through code and creativity."
+  title: "Aditya Kurnia Saputra - UX/UI Designer"
+  description: "Welcome to my portfolio! I'm Aditya Kurnia Saputra, a passionate Software Engineering student specializing in web development and game development based in Bogor."
+title: "Hey, I'm Aditya Web Developer"
+description: "I love working with both frontend and backend technologies, exploring new tools, and experimenting with different frameworks to improve my workflow."
 hero:
   links:
-    - label: "Use this template"
-      to: https://github.com/nuxt-ui-templates/portfolio
+    - label: "More About Me"
+      to: https://github.com/adityakurnias
       color: "neutral"
   images:
-    - src: /hero/random-1.avif
-      alt: Random Image 1
-    - src: /hero/random-2.avif
-      alt: Random Image 2
-    - src: /hero/random-3.avif
-      alt: Random Image 3
-    - src: /hero/random-4.avif
-      alt: Random Image 4
-    - src: /hero/random-5.avif
-      alt: Random Image 5
-    - src: /hero/random-6.avif
-      alt: Random Image 6
-    - src: /hero/random-7.avif
-      alt: Random Image 7
-    - src: /hero/random-8.avif
-      alt: Random Image 8
-    - src: /hero/random-9.avif
-      alt: Random Image 9
+    - src: /hero/HTML5.svg
+      alt: HTML
+    - src: /hero/CSS3.svg
+      alt: CSS
+    - src: /hero/JavaScript.svg
+      alt: JavaScript
+    - src: /hero/TypeScript.svg
+      alt: TypeScript
+    - src: /hero/Vue.js.svg
+      alt: Vue JS
+    - src: /hero/Nuxt JS.svg
+      alt: Nuxt
+    - src: /hero/Laravel.svg
+      alt: Laravel
+    - src: /hero/Godot Engine.svg
+      alt: Godot Engine
+    - src: /hero/Deno.svg
+      alt: Deno
 about:
   title: "About Me"
   description: |
-    As a UX/UI designer and front-end developer with 6 years of experience, I leverage my Boston University Interactive Design degree to craft user-centered digital experiences.
-    My approach blends creative strategy with technical expertise, transforming concepts into functional, purposeful digital products that seamlessly integrate design and technology.
+      As a software engineering student and aspiring developer, I specialize in front-end development and game programming. 
+      I’m passionate about exploring modern web technologies and interactive design, constantly pushing myself to learn beyond my comfort zone. 
+      With a strong curiosity for both web and game development, I enjoy turning ideas into functional, engaging digital experiences.
+
 experience:
-  title: Work Experience
+  title: Education
   items:
-    - position: "Brand Designer at"
+    - position: "SMK Plus Pelita Nusantara"
       date: "2023 - Present"
-      company:
-        name: Nuxt
-        logo: "i-simple-icons-nuxtdotjs"
-        url: "https://nuxt.com"
-        color: "#00DC82"
-    - position: "Assets Designer at"
-      date: "2022 - 2023"
-      company:
-        name: Raycast
-        logo: "i-simple-icons-raycast"
-        url: "https://raycast.com"
+      school:
+        logo: https://www.smkpluspnb.sch.id/view/public/logo-penus.png
+        url: "https://www.smkpluspnb.sch.id/"
         color: "#FF6363"
-    - position: "Senior UX/UI Designer at"
-      date: "2020 - 2021"
-      company:
-        name: Linear
-        logo: "i-simple-icons-linear"
-        url: "https://linear.app"
-        color: "#5E6AD2"
 testimonials:
-  - quote: "Emma's approach to UX design completely transformed our product. She has a rare ability to balance beautiful aesthetics with functional simplicity. The redesign not only looked better, but it reduced our customer support tickets by 40% and increased conversion rates across all key metrics."
+  - quote: "I'm so gratefull because I have a frontend like him"
     author:
-      name: 'Sarah Chen'
-      description: 'Product Director at Bloom Finance'
+      name: 'John Obama M.S'
+      description: 'Developer at SynchronizeTeams'
       avatar:
-        src: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=40&h=40&q=80'
-        srcset: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=80&h=80&q=80 2x'
-  - quote: "Working with Emma was the best decision we made for our startup. She didn't just deliver designs—she challenged our assumptions, conducted thorough user research, and created an experience that truly resonated with our audience. Her technical knowledge of front-end development meant the handoff to our engineering team was seamless."
+        src: 'https://avatars.githubusercontent.com/u/159476448?v=4'
+        srcset: 'https://avatars.githubusercontent.com/u/159476448?v=4'
+  - quote: "He is highly competent, has great integrity, and is flexible in dealing with all kinds of extraordinary ideas."
     author:
-      name: 'Michael Rodriguez'
-      description: 'Co-founder of Wavelength Music'
+      name: 'Gheraldy Moses Tarigan'
+      description: 'Co-founder & CFO of SynchronizeTeams'
       avatar:
-        src: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=40&h=40&q=80'
-        srcset: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=80&h=80&q=80 2x'
-  - quote: "Emma stands out in her ability to translate complex sustainability data into intuitive interfaces. Her work on EcoTrack wasn't just visually stunning—it fundamentally changed how our users interact with environmental information. She approaches each problem with both creativity and analytical rigor, which is exactly what we needed."
+        src: 'https://avatars.githubusercontent.com/u/89762126?v=4'
+        srcset: 'https://avatars.githubusercontent.com/u/89762126?v=4'
+  - quote: "He is a great developer"
     author:
-      name: 'Dr. Aisha Johnson'
-      description: 'Chief Innovation Officer at GreenTech Solutions'
+      name: 'Adly Fahreza'
+      description: 'CEO at SynchronizeTeams'
       avatar:
-        src: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=40&h=40&q=80'
-        srcset: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=80&h=80&q=80 2x'
+        src: 'https://avatars.githubusercontent.com/u/75571386?v=4'
+        srcset: 'https://avatars.githubusercontent.com/u/75571386?v=4'
+  - quote: "He is good at website development as a frontend with many tech stack"
+    author:
+      name: 'Satria Raja Djuanda'
+      description: 'CFO at Blossom Park Studio'
+      avatar:
+        src: 'https://avatars.githubusercontent.com/u/146790898?v=4'
+        srcset: 'https://avatars.githubusercontent.com/u/146790898?v=4'
 blog:
   title: "Latest Articles"
   description: "Some of my recent thoughts"
@@ -89,13 +83,7 @@ faq:
       questions:
         - label: What services do you offer?
           content: |
-            I specialize in UX/UI design and front-end development. This includes user research, wireframing, interactive prototyping, creating intuitive user interfaces, building responsive websites and web applications (especially with Vue.js/Nuxt.js), and developing design systems. My goal is to create seamless digital experiences from concept to deployment.
-        - label: What is your design process like?
-          content: |
-            My process is collaborative and iterative, typically involving stages like Discovery & Research, Ideation & Prototyping, User Testing, Visual Design, and close collaboration with development teams during implementation. I tailor the process based on project needs, always focusing on user-centered solutions.
-        - label: Do you work with startups?
-          content: |
-            Absolutely! I enjoy working with startups to help shape their product vision and create user-friendly interfaces from the ground up. I can adapt my process to fit the fast-paced startup environment.
+            I specialize in front-end development. This includes user research, wireframing, interactive prototyping, creating intuitive user interfaces, building responsive websites and web applications (especially with Vue.js/Nuxt.js), and developing design systems. My goal is to create seamless digital experiences from concept to deployment.
     - title: Pricing & Timelines
       questions:
         - label: How much does a project typically cost?

@@ -49,7 +49,7 @@ export default defineContentConfig({
           items: z.array(z.object({
             date: z.date(),
             position: z.string(),
-            company: z.object({
+            school: z.object({
               name: z.string(),
               url: z.string(),
               logo: z.string().editor({ input: 'icon' }),

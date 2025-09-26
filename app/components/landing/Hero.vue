@@ -158,7 +158,7 @@ defineProps<{
 
     <UMarquee
       pause-on-hover
-      class="py-2 -mx-8 sm:-mx-12 lg:-mx-16 [--duration:40s]"
+      class="py-2 -mx-8 sm:-mx-12 lg:-mx-16 [--duration:25s]"
     >
       <Motion
         v-for="(img, index) in page.hero.images"
@@ -179,8 +179,8 @@ defineProps<{
         }"
       >
         <NuxtImg
-          width="234"
-          height="234"
+          width="100"
+          height="100"
           class="rounded-lg aspect-square object-cover"
           :class="index % 2 === 0 ? '-rotate-2' : 'rotate-2'"
           v-bind="img"

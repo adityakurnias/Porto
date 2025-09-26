@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import type { IndexCollectionItem } from '@nuxt/content'
+import type { IndexCollectionItem } from "@nuxt/content";
 
-defineProps<{
-  page: IndexCollectionItem
-}>()
+const props = defineProps<{
+  page: IndexCollectionItem;
+}>();
 </script>
 
 <template>
@@ -12,7 +12,7 @@ defineProps<{
     :ui="{
       container: '!p-0 gap-4 sm:gap-4',
       title: 'text-left text-xl sm:text-xl lg:text-2xl font-medium',
-      description: 'mt-2'
+      description: 'mt-2',
     }"
   >
     <template #description>
@@ -32,7 +32,7 @@ defineProps<{
           <USeparator />
           <ULink
             class="flex items-center gap-1"
-            :to="experience.company.url"
+            :to="experience.school.url"
             target="_blank"
           >
             <span class="text-sm">
@@ -40,10 +40,9 @@ defineProps<{
             </span>
             <div
               class="inline-flex items-center gap-1"
-              :style="{ color: experience.company.color }"
+              :style="{ color: experience.school.color }"
             >
-              <span class="font-medium">{{ experience.company.name }}</span>
-              <UIcon :name="experience.company.logo" />
+              <span class="font-medium">{{ experience.school.name }}</span>
             </div>
           </ULink>
         </Motion>
@@ -52,6 +51,4 @@ defineProps<{
   </UPageSection>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>

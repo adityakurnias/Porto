@@ -8,6 +8,7 @@ defineProps<{
 
 <template>
   <UPageSection
+    id="about"
     :title="page.about.title"
     :description="page.about.description"
     :ui="{
